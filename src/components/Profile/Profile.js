@@ -1,6 +1,4 @@
-import user from './user.json'
-
-function Profile() {
+function Profile({ user }) {
     return (
         <div class="profile">
             <div class="description">

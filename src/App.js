@@ -1,9 +1,20 @@
 import './App.css';
 
+import Profile from './components/Profile/Profile';
+import user from './user.json'
+
+import Statistics from './stats.json'
+import Stats from './components/Stats/Stats'
+
+import Friends from './friends.json'
+import FriendsList from './components/Friends/FriendList'
+
 function App() {
   return (
     <div className="App">
-      GoIT react hw 1
+      <Profile user={ user }/>
+      <Stats title="Stats" stats={Statistics} />
+      <FriendsList friends={ Friends }/>
     </div>
   );
 }
