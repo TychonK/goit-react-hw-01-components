@@ -1,18 +1,18 @@
 function Stats({title, stats}) {
     const statsElements = stats.map((stat) => {
         return (
-            <li class="item" key={stat.id}>
-                <span class="label">{stat.label}</span>
-                <span class="percentage">{ stat.percentage } %</span>
+            <li className="item" key={stat.id}>
+                <span className="label">{stat.label}</span>
+                <span className="percentage">{ stat.percentage } %</span>
             </li>
         )
         
     })
         return (
-        <section class="statistics">
-            <h2 class="title">{title}</h2>
+        <section className="statistics">
+            <h2 className="title">{title}</h2>
 
-            <ul class="stat-list">
+            <ul className="stat-list">
                     {statsElements}
             </ul>
         </section>
