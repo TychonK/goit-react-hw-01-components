@@ -1,4 +1,4 @@
-function FriendListItem({avatar, name, isOnline}) {
+function FriendListItem({avatar, name, isOnline, id}) {
     function online(value) {
         if (value) {
             return (
@@ -12,8 +12,8 @@ function FriendListItem({avatar, name, isOnline}) {
     }
     const onlineSpan = online(isOnline);
     return (
-        <li class="item">
-            { onlineSpan }
+        <li class="item" key={id}>
+            {onlineSpan}
             <img class="avatar" src={avatar} alt="Avatar" width="48" />
             <p class="name">{ name }</p>
         </li>
