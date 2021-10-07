@@ -1,3 +1,5 @@
+import './Profile.scss'
+
 function Profile({ user }) {
     return (
         <div className="profile">
@@ -8,7 +10,7 @@ function Profile({ user }) {
                 className="avatar"
                 />
                 <p className="name">{user.name}</p>
-                <p className="tag">{user.tag}</p>
+                <p className="tag">@{user.tag}</p>
                 <p className="location">{user.location}</p>
             </div>
 

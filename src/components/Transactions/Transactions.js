@@ -1,3 +1,5 @@
+import './Transactions.scss'
+
 function Transactions({ transactions }) {
     const transactionsInfo = transactions.map((transaction) => {
         return (
@@ -10,7 +12,7 @@ function Transactions({ transactions }) {
     })
     
     return (
-        <table className="transaction-history">
+        <table className="transaction-history" cellSpacing="0">
             <thead>
                 <tr>
                 <th>Type</th>
